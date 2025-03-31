@@ -22,9 +22,9 @@ const ContactForm = () => {
             <div class="grid md:grid-cols-2">
               <div class="h-full pr-6">
                 <p class="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                  Class aptent taciti sociosqu ad litora torquent per conubia
-                  nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut
-                  scelerisque sagittis ante, ac tincidunt sem venenatis ut.
+                  Whether you have a project in mind, need a website upgrade, or
+                  just want to say hello, I’m here to help! Let’s bring your
+                  ideas to life. 🚀
                 </p>
                 <ul class="mb-6 md:mb-0">
                   <li class="flex">
@@ -108,7 +108,7 @@ const ContactForm = () => {
                         Working hours
                       </h3>
                       <p class="text-gray-600 dark:text-slate-400">
-                        Monday - Friday: 08:00 - 17:00
+                        Monday - Friday: 09:00 - 5:00
                       </p>
                       <p class="text-gray-600 dark:text-slate-400">
                         Saturday &amp; Sunday: 08:00 - 12:00
