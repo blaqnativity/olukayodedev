@@ -6,6 +6,7 @@ import heroImg from "./assets/img/kay.png";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Stack from "./components/Stack";
+import Resume from "./components/Resume";
 
 const App = () => {
   const titleOne = " A Passionate";
@@ -23,6 +24,7 @@ const App = () => {
         heroImg={heroImg}
       />
       <Stack />
+      <Resume />
       <CTA />
       <ContactForm />
       <Footer logo={logo} />
