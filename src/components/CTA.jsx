@@ -1,9 +1,9 @@
 import heroImg from "../assets/img/kaybee.png";
 
 const CTA = ({ name, profile, message, hero }) => {
-  const title = "Boost your productivity. Start using our app today.";
+  const title = "Boost your productivity.";
   const description =
-    "Join us in our mission to harness the boundless power of the sun. Our state-of-the-art solar plant is revolutionizing energy production, providing clean and renewable electricity to power communities.";
+    "Unlock the full potential of your business by taking it digital! In today’s fast-paced world, visibility is everything, and I’m here to help you establish a strong, compelling online presence. Whether you need a stunning website, seamless user experience, or a digital strategy that drives growth, I’ve got you covered.";
   return (
     <>
       <section className="relative max-w-7xl h-[24rem] lg:rounded-lg mx-auto py-14 lg:pb-20 px-5 lg:px-0 my-40">

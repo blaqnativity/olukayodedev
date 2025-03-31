@@ -3,7 +3,7 @@ import React from "react";
 const ContactForm = () => {
   return (
     <>
-      <section class="bg-blue-50 dark:bg-slate-800" id="contact">
+      <section class="bg-gray-700 dark:bg-gray-700" id="contact">
         <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div class="mb-4">
             <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
@@ -28,7 +28,7 @@ const ContactForm = () => {
                 </p>
                 <ul class="mb-6 md:mb-0">
                   <li class="flex">
-                    <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <div class="flex h-10 w-10 items-center justify-center rounded bg-gray-900 text-gray-50">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -55,7 +55,7 @@ const ContactForm = () => {
                     </div>
                   </li>
                   <li class="flex">
-                    <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <div class="flex h-10 w-10 items-center justify-center rounded bg-gray-900 text-gray-50">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -86,7 +86,7 @@ const ContactForm = () => {
                     </div>
                   </li>
                   <li class="flex">
-                    <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <div class="flex h-10 w-10 items-center justify-center rounded bg-gray-900 text-gray-50">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -171,7 +171,7 @@ const ContactForm = () => {
                   <div class="text-center">
                     <button
                       type="submit"
-                      class="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0"
+                      class="w-full bg-gray-900 text-white px-6 py-3 font-xl rounded-md sm:mb-0"
                     >
                       Send Message
                     </button>
