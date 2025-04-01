@@ -2,7 +2,7 @@ import heroBg from "../assets/img/kaybee.png";
 
 const Hero = ({ titleOne, titleTwo, heroImg = heroBg, message }) => {
   return (
-    <section className="min-h-screen md:min-h-[80vh] bg-primary text-gray-800 py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+    <section className="min-h-screen md:min-h-[80vh] bg-primary text-gray-800 py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-8 mt-8 md:mt-0">
       {/* Left Side: Image */}
       <div className="w-full md:w-5/12 flex justify-center h-full md:justify-end">
         <img

@@ -17,7 +17,7 @@ const Resume = () => {
     {
       company: "The Rootshive",
       role: "Frontend Developer (Intern)",
-      date: "2023-08-15",
+      date: "2023",
       description:
         "Developed and maintained PHP-based web applications using Bootstrap to create responsive and visually appealing UIs. Worked with backend developers to integrate dynamic content and APIs into frontend interfaces, ensuring seamless functionality",
     },
@@ -53,12 +53,10 @@ const Resume = () => {
               <h3 className="mb-2 font-bold text-gray-800 text-xl">
                 {item.company}
               </h3>
-              <p className="text-md my-2 text-white text-gray-600">
+              <p className="text-md my-2 text-gray-800 font-extrabold leading-snug tracking-wide">
                 {item.role} | {item.date}
               </p>
-              <p className="text-gray-700 text-white leading-tight">
-                {item.description}
-              </p>
+              <p className="text-slate-100 leading-tight">{item.description}</p>
             </div>
           </div>
         ))}
