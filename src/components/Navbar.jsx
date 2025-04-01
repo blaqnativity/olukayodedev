@@ -1,3 +1,4 @@
+// import DatePicker from "./DatePicker.jsx";
 const Navbar = ({ logo }) => {
   return (
     <>
@@ -26,12 +27,13 @@ const Navbar = ({ logo }) => {
               </a>
             </div>
             <div class="flex items-center justify-end gap-3">
-              <a
-                class="hidden items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
-                href="/login"
+              <button
+                type="submit"
+                className="border-2 border-gray-300 rounded-full px-4 py-2"
               >
                 Schedule a call
-              </a>
+              </button>
+              {/* <DatePicker /> */}
             </div>
           </div>
         </div>

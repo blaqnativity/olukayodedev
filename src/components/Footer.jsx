@@ -2,7 +2,6 @@ import React from "react";
 
 const Footer = ({ logo }) => {
   const year = new Date().getFullYear();
-  const day = new Date().getDate();
   return (
     <>
       <div class="bg-gray-100">
@@ -33,7 +32,7 @@ const Footer = ({ logo }) => {
           </div>
         </div>
         <div class="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
-          <p>© Copyright {day}-{year}. All Rights Reserved.</p>
+          <p>© Copyright {year}. All Rights Reserved.</p>
         </div>
       </div>
     </>
