@@ -6,6 +6,8 @@
 @source "../node_modules/flowbite"; */
 
 * {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;

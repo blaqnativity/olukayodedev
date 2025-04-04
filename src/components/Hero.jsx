@@ -35,9 +35,10 @@ const Hero = ({ titleOne, titleTwo, heroImg = heroBg, message }) => {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <a
-            href="#"
+            href="https://dev.to/theolukayodeasemudara"
             className="bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/80 text-center"
             role="button"
+            target="_blank"
           >
             Blog posts
           </a>
