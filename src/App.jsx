@@ -5,6 +5,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Resume from "./pages/Resume";
 import Blog from "./pages/Blog";
+import Projects from "./pages/Projects";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/blog-posts" element={<Blog />} />
+        <Route path="/portfolio" element={<Projects />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

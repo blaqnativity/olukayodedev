@@ -2,8 +2,12 @@ import react from "./assets/img/reactjs.png";
 import frontend from "./assets/img/frontend.png";
 import nuxt from "./assets/img/nuxt.png";
 import vue from "./assets/img/vue.png";
+import promage from "./assets/img/prforce.png";
+import rh from "./assets/img/rh.png";
+import jerd from "./assets/img/jerdkonsult.png";
+import acres from "./assets/img/acresxmanna.png";
 
-const posts = [
+export const posts = [
   {
     id: 1,
     title: "Mastering React Forms with a State Object: My Personal Experience",
@@ -51,4 +55,40 @@ const posts = [
   },
 ];
 
-export default posts;
+export const projects = [
+  {
+    id: 1,
+    title: "GOMYCODE Institute",
+    slug: "webApp",
+    imageUrl: "",
+    url: "https://gomycode.com/ng/",
+  },
+  {
+    id: 2,
+    title: "The Rootshive",
+    slug: "webApp",
+    imageUrl: rh,
+    url: "https://therootshive.com/",
+  },
+  {
+    id: 3,
+    title: "Promage Force",
+    slug: "wordpress",
+    imageUrl: promage,
+    url: "http://promageforce.com/",
+  },
+  {
+    id: 4,
+    title: "Acresmanna",
+    slug: "wordpress",
+    imageUrl: acres,
+    url: "https://acresxmanna.com/",
+  },
+  {
+    id: 5,
+    title: "Jerd Konsult",
+    slug: "wordpress",
+    imageUrl: jerd,
+    url: "https://jerdkonsultrecruitment.de/",
+  },
+];

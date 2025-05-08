@@ -1,4 +1,4 @@
-import posts from "../posts.js";
+import { posts } from "../data";
 import { FaAngleRight } from "react-icons/fa";
 
 const Blog = () => {
@@ -11,7 +11,7 @@ const Blog = () => {
         </div>
         {posts.map((post) => (
           <ul class="max-w-7xl mx-auto grid grid-cols-1 gap-y-10 gap-x-6 items-start p-8">
-            <li class="flex flex-row gap-10  items-start">
+            <li key={post.id} class="flex flex-row gap-10  items-start">
               <div class="order-1 sm:ml-6 xl:ml-0">
                 <h3 class="mb-1 text-slate-900 font-semibold">
                   <span class="mb-1 block text-sm leading-6 text-indigo-500">
