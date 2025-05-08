@@ -2,28 +2,19 @@ import Navbar from "./components/Navbar";
 import logo from "./assets/img/olkfavicon.ico";
 import Hero from "./components/Hero";
 import CTA from "./components/CTA";
-import heroImg from "./assets/img/kay.png";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Stack from "./components/Stack";
 import Resume from "./components/Resume";
 
 const App = () => {
-  const titleOne = " A Passionate";
-  const titleTwo = " Software Developer";
-  const message =
-    "I’m Olukayode Kay, a passionate Software Developer with expertise in React.js, Vue.js, & modern web technologies. I specialize in building user-friendly applications that solve real-world problems. With a deep understanding of frontend development, state management, and API integration, I can bring your ideas to life";
+  const message = "";
 
   return (
     <>
       <div class="fixed -z-10 min-h-screen w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
       <Navbar logo={logo} />
-      <Hero
-        titleOne={titleOne}
-        titleTwo={titleTwo}
-        message={message}
-        heroImg={heroImg}
-      />
+      <Hero />
       <Stack />
       <Resume />
       <CTA />
