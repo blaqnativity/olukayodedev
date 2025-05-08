@@ -45,7 +45,7 @@ const Resume = () => {
         </div>
       </motion.div>
       <div className="relative wrap overflow-hidden">
-        <div className="border-2 absolute border-opacity-20 border-gray-700 h-full left-1/2"></div>
+        <div className="md:border-2 absolute border-opacity-20 border-gray-700 h-full left-1/2"></div>
 
         {resume.map((item, index) => (
           <motion.div
@@ -61,12 +61,12 @@ const Resume = () => {
             }`}
           >
             <div className="order-1 w-5/12"></div>
-            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full">
+            <div className="hidden z-20 md:flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full">
               <h1 className="mx-auto font-semibold text-lg text-gray-900">
                 {index + 1}
               </h1>
             </div>
-            <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <div className="order-1 bg-gray-400 rounded-lg shadow-xl md:w-5/12 px-6 py-4">
               <h3 className="mb-2 font-bold text-gray-800 text-xl">
                 {item.company}
               </h3>

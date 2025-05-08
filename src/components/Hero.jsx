@@ -12,10 +12,11 @@ const Hero = () => {
   const [text] = useTypewriter({
     words: [
       "Frontend Developer",
-      "Next.js Developer",
-      "React.js Developer",
-      "Vue.js Developer",
+      "Wordpress Developer",
+      "Technical Writer",
+      "UI/UX Designer",
     ],
+
     loop: 0,
     delaySpeed: 2000,
   });

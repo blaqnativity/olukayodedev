@@ -30,7 +30,7 @@ const Footer = ({ logo }) => {
             </div>
           </div>
           <div class="p-5 sm:w-4/12">
-            <h3 class="font-medium text-lg text-indigo-600 mb-4">
+            <h3 class="font-medium text-lg text-gray-700 mb-4">
               Subscribe to my Newsletter
             </h3>
             <form class="mt-4">
