@@ -2,12 +2,18 @@ import { motion } from "framer-motion";
 import heroBg from "../assets/img/kaybee.png";
 
 const Hero = ({ titleOne, titleTwo, heroImg = heroBg, message }) => {
+  const variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <section className="min-h-screen bg-primary text-gray-800 py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-8 mt-8 md:mt-0 ">
       {/* Left Side: Image */}
       <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
+        variants={variants}
+        initial="hidden"
+        whileInView="visible"
         transition={{ duration: 0.8 }}
         className="w-full md:w-5/12 flex justify-center h-full md:justify-end"
       >
@@ -20,8 +26,9 @@ const Hero = ({ titleOne, titleTwo, heroImg = heroBg, message }) => {
 
       {/* Right Side: Text Content */}
       <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
+        variants={variants}
+        initial="hidden"
+        whileInView="visible"
         transition={{ duration: 0.8 }}
         className="w-full md:w-7/12 text-center md:text-left relative"
       >
