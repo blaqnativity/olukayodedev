@@ -79,16 +79,14 @@ const Hero = () => {
           <a
             href="https://dev.to/theolukayodeasemudara"
             className="bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/80 text-center"
-            role="button"
             target="_blank"
             rel="noopener noreferrer"
           >
             Blog posts
           </a>
           <a
-            href="https://your-resume-link.com" // Replace with actual resume URL
+            href="/olukayodeasemudara.pdf" // Replace with actual resume URL
             className="border-2 border-gray-500 text-gray-500 font-semibold py-2 px-4 rounded-lg text-center"
-            role="button"
             target="_blank"
             rel="noopener noreferrer"
           >
