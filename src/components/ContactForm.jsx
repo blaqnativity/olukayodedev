@@ -1,9 +1,20 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 const ContactForm = () => {
+  const variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <>
-      <section class="bg-gray-700 dark:bg-gray-700" id="contact">
+      <motion.section
+        variants={variants}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8 }}
+        class="bg-gray-700 dark:bg-gray-700"
+        id="contact"
+      >
         <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div class="mb-4">
             <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
@@ -181,7 +192,7 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

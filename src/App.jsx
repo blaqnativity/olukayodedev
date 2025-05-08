@@ -16,6 +16,7 @@ const App = () => {
 
   return (
     <>
+      <div class="fixed -z-10 min-h-screen w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
       <Navbar logo={logo} />
       <Hero
         titleOne={titleOne}

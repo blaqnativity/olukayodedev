@@ -1,10 +1,21 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 const Footer = ({ logo }) => {
+  const variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   const year = new Date().getFullYear();
   return (
     <>
-      <div class="bg-gray-100">
+      <motion.div
+        variants={variants}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8 }}
+        class="bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
+      >
         <div class="max-w-screen-xl py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
           <div class="p-5 sm:w-8/12">
             <img class="mb-4 h-7 w-auto rounded-full" src={logo} alt="" />
@@ -34,7 +45,7 @@ const Footer = ({ logo }) => {
         <div class="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
           <p>© Copyright {year}. All Rights Reserved.</p>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
-/* @import "flowbite";
-@import "flowbite/src/themes/default";
-@plugin "flowbite/plugin";
-@source "../node_modules/flowbite"; */
 
 * {
   scroll-behavior: smooth;
@@ -11,5 +7,11 @@
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  /* background: #C5C5C5; */
+  /* background: #ffd8d8; */
+}
+
+#particles {
+  z-index: -1;
+  height: 100%;
+  position: absolute;
 }

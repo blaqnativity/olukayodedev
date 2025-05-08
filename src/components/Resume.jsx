@@ -1,4 +1,11 @@
+import { motion } from "framer-motion";
+
 const Resume = () => {
+  const variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   const resume = [
     {
       company: "GomyCode",
@@ -25,17 +32,27 @@ const Resume = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl my-40">
-      <div className="title mb-10">
+      <motion.div
+        variants={variants}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.9 }}
+        className="title mb-10"
+      >
         <h2 className="text-3xl font-bold text-center mb-4">My Resume</h2>
         <div className="flex justify-center">
           <div className="w-16 h-[2px] bg-gray-900"></div>
         </div>
-      </div>
+      </motion.div>
       <div className="relative wrap overflow-hidden">
-        <div className="border-2 absolute border-opacity-20 border-gray-700 h-full border left-1/2"></div>
+        <div className="border-2 absolute border-opacity-20 border-gray-700 h-full left-1/2"></div>
 
         {resume.map((item, index) => (
-          <div
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1 }}
             key={index}
             className={`mb-8 flex justify-between items-center w-full ${
               index % 2 === 0
@@ -58,7 +75,7 @@ const Resume = () => {
               </p>
               <p className="text-slate-100 leading-tight">{item.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

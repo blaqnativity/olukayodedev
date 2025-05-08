@@ -1,12 +1,24 @@
+import { motion } from "framer-motion";
 import heroImg from "../assets/img/kaybee.png";
 
-const CTA = ({ name, profile, message, hero }) => {
+const CTA = () => {
+  const variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   const title = "Boost your productivity.";
   const description =
     "Unlock the full potential of your business by taking it digital! In today’s fast-paced world, visibility is everything, and I’m here to help you establish a strong, compelling online presence. Whether you need a stunning website, seamless user experience, or a digital strategy that drives growth, I’ve got you covered.";
   return (
     <>
-      <section className="relative max-w-7xl h-[24rem] lg:rounded-lg mx-auto py-14 lg:pb-20 px-5 lg:px-0 my-40">
+      <motion.section
+        variants={variants}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.8 }}
+        className="relative max-w-7xl h-[24rem] lg:rounded-lg mx-auto py-14 lg:pb-20 px-5 lg:px-0 my-40"
+      >
         {/* Background Image */}
         <img
           src={heroImg}
@@ -27,7 +39,7 @@ const CTA = ({ name, profile, message, hero }) => {
             Register for free
           </button>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };
