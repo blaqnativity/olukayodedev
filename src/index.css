@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/comforter");
 @import "tailwindcss";
 
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   /* background: #ffd8d8; */
 }
 
-#particles {
-  z-index: -1;
-  height: 100%;
-  position: absolute;
+.logo {
+  font-family: "Comforter", sans-serif;
 }

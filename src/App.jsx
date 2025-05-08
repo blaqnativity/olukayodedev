@@ -1,25 +1,26 @@
 import Navbar from "./components/Navbar";
 import logo from "./assets/img/olkfavicon.ico";
-import Hero from "./components/Hero";
-import CTA from "./components/CTA";
-import ContactForm from "./components/ContactForm";
-import Footer from "./components/Footer";
-import Stack from "./components/Stack";
-import Resume from "./components/Resume";
+import MainPage from "./pages/MainPage";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
+import Resume from "./pages/Resume";
+import Blog from "./pages/Blog";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   const message = "";
 
   return (
     <>
-      <div class="fixed -z-10 min-h-screen w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+      <div class="fixed -z-10 min-h-screen w-full bg-[#fff] bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
       <Navbar logo={logo} />
-      <Hero />
-      <Stack />
-      <Resume />
-      <CTA />
-      <ContactForm />
-      <Footer logo={logo} />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/blog-posts" element={<Blog />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </>
   );
 };

@@ -4,6 +4,7 @@ const Resume = () => {
   const variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
+    transition: { duration: 0.9 },
   };
 
   const resume = [
@@ -31,7 +32,7 @@ const Resume = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-7xl my-40">
+    <div className="container mx-auto px-4 py-8 max-w-7xl md:my-0">
       <motion.div
         variants={variants}
         initial="hidden"
