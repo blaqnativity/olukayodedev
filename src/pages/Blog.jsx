@@ -12,7 +12,7 @@ const Blog = () => {
       <div className="mt-20">
         <div class="text-center">
           <h2 class="font-semibold text-3xl">Check out my latest articles</h2>
-          <p class="max-w-md mx-auto mt-2 text-gray-500">My Blog</p>
+          <p class="mt-2 text-gray-500">My Blog</p>
         </div>
         {posts.map((post) => (
           <ul class="max-w-7xl mx-auto grid grid-cols-1 gap-y-10 gap-x-6 items-start p-8">
@@ -22,7 +22,7 @@ const Blog = () => {
               whileInView="visible"
               transition={{ duration: 0.9 }}
               key={post.id}
-              class="flex flex-row gap-10  items-start"
+              class="flex flex-col md:flex-row gap-10  items-start"
             >
               <div class="order-1 sm:ml-6 xl:ml-0">
                 <h3 class="mb-1 text-slate-900 font-semibold">
@@ -49,7 +49,7 @@ const Blog = () => {
               <img
                 src={post.imageUrl}
                 alt=""
-                class="mb-6 shadow-md rounded-lg bg-slate-50 max-w-[400px] sm:mb-0 xl:mb-6"
+                class="mb-6 shadow-md rounded-lg bg-slate-50 md:max-w-[400px] sm:mb-0 xl:mb-6"
                 width="1216"
                 height="640"
               />

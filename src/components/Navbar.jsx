@@ -1,8 +1,12 @@
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaRegMinusSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import olkLogo from "../assets/img/olkfavicon.ico";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <header class="max-w-7xl mx-auto lg:px-8 px-4 flex flex-wrap items-center py-4">
@@ -16,11 +20,6 @@ const Navbar = () => {
             </span>
           </Link>
         </div>
-
-        <label for="menu-toggle" class="pointer-cursor md:hidden block">
-          <FaBars />
-        </label>
-        <input class="hidden" type="checkbox" id="menu-toggle" />
 
         <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
           <nav>
@@ -51,6 +50,19 @@ const Navbar = () => {
             </ul>
           </nav>
         </div>
+
+        {/* menu icon */}
+
+        <div for="menu-toggle" class="text-2xl pointer-cursor md:hidden block">
+          {isOpen ? (
+            <FaRegMinusSquare onClick={toggleMenu} />
+          ) : (
+            <FaBars onClick={toggleMenu} />
+          )}
+        </div>
+
+        {/* mobile menu nav */}
+        {}
       </header>
     </>
   );

@@ -100,23 +100,23 @@ export const projects = [
 // resume data start
 export const resume = [
   {
-    company: "GomyCode",
+    company: "GOMYCODE",
     role: "Frontend Developer",
-    date: "2025",
+    date: "February 2025 - PRESENT",
     description:
       "Designed and implemented user-friendly UI components, enhancing overall usability and accessibility. Collaborated with backend developers to integrate RESTful APIs, ensuring seamless data flow and dynamic content rendering. Conducted code reviews and provided constructive feedback to junior developers, fostering a culture of continuous improvement and knowledge sharing",
   },
   {
-    company: "Freelance",
+    company: "CrayonCo (Freelance)",
     role: "Wordpress Developer",
-    date: "2024-10-01",
+    date: "Sept 2023 - Present",
     description:
       "Built custom WordPress websites, ensuring they met client expectations for branding, functionality, and user experience. Implemented WooCommerce and payment gateway integrations, enabling seamless e-commerce functionality. Optimized websites for faster performance, enhanced security, and mobile responsiveness",
   },
   {
     company: "The Rootshive",
     role: "Frontend Developer (Intern)",
-    date: "2023",
+    date: "April 2023 - January 2024",
     description:
       "Developed and maintained PHP-based web applications using Bootstrap to create responsive and visually appealing UIs. Worked with backend developers to integrate dynamic content and APIs into frontend interfaces, ensuring seamless functionality",
   },
