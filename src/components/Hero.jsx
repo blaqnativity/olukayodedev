@@ -1,6 +1,7 @@
 import { useTypewriter } from "react-simple-typewriter";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { motion } from "motion/react";
+import WhatsappApi from "./WhatsappApi";
 
 const Hero = () => {
   // framer motion animation
@@ -63,6 +64,8 @@ const Hero = () => {
             <FaGithub />
           </a>
         </motion.div>
+
+        <WhatsappApi />
       </div>
     </>
   );

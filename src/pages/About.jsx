@@ -2,6 +2,7 @@ import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import olk from "../assets/img/kay.png";
 import { motion } from "framer-motion";
+import WhatsappApi from "../components/WhatsappApi";
 
 const About = () => {
   const variants = {
@@ -15,7 +16,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.9 }}
-        class="min-h-screen bg-primary text-white py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-8"
+        class="relative min-h-screen bg-primary text-white py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-8"
       >
         {/* <!-- Left Side: Image --> */}
         <div class="w-full md:w-5/12 flex justify-center h-full md:justify-end">
@@ -69,7 +70,7 @@ const About = () => {
           </div>
         </div>
       </motion.section>
-
+      <WhatsappApi />
       <Services />
       <Testimonials />
     </>
