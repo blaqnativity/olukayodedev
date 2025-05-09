@@ -9,6 +9,14 @@ import acres from "./assets/img/acresxmanna.png";
 import utybe from "./assets/img/utybe.jpeg";
 import lase from "./assets/img/lase.jpeg";
 import productsbyMyke from "./assets/img/productsbyMyke.jpeg";
+import {
+  FaCode,
+  FaFigma,
+  FaGlobe,
+  FaPen,
+  FaRocket,
+  FaWordpress,
+} from "react-icons/fa";
 
 // blog posts data start
 export const posts = [
@@ -151,3 +159,49 @@ export const testimonials = [
   },
 ];
 // testimonials data end
+
+// services data start
+export const services = [
+  {
+    id: 1,
+    title: "Frontend Development",
+    icon: FaCode,
+    description:
+      "I create responsive websites that allow the user to experience your website in the best and most apporpriate way suited to the device they are using.",
+  },
+  {
+    id: 2,
+    title: "UI/UX Design",
+    icon: FaFigma,
+    description:
+      "I create user-friendly interfaces that enable users to understand how to use complex technical products.",
+  },
+  {
+    id: 3,
+    title: "Web Design",
+    icon: FaGlobe,
+    description:
+      "I have excellent understanding of graphic design, color schemes, button design, interface design, photoshop/ illustrator, navigational design, and typography.",
+  },
+  {
+    id: 4,
+    title: "Wordpress Site Development",
+    icon: FaWordpress,
+    description:
+      "In many projects, my client’s require the ability to manage the content of their website. WordPress is the world’s most popular content management system which I have many years of experience with.",
+  },
+  {
+    id: 5,
+    title: "Technical Writing",
+    icon: FaPen,
+    description:
+      "I write technical articles on various topics, including frontend technologies, web development, and programming languages.",
+  },
+  {
+    id: 6,
+    title: "SEO Optimization",
+    icon: FaRocket,
+    description:
+      "I optimize websites for search engines to improve visibility and ranking, ensuring that your site reaches its target audience effectively.",
+  },
+];
