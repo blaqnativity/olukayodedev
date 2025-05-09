@@ -22,6 +22,17 @@ import {
 export const posts = [
   {
     id: 1,
+    title: "How to Fix Icons Not Displaying in React: A Simple Solution",
+    author: "Olukayode Asemudara",
+    content:
+      "If you're working on a React project and you've tried using icons but they aren't showing up, you're not alone. It’s a common issue that many React developers face. In this post, I’ll walk you through why your icons might not be displaying and how to fix it, using a super simple approach.",
+    date: "Posted on May 9",
+    postUrl:
+      "https://dev.to/theolukayodeasemudara/how-to-fix-icons-not-displaying-in-react-a-simple-solution-2dni",
+    imageUrl: react,
+  },
+  {
+    id: 2,
     title: "Mastering React Forms with a State Object: My Personal Experience",
     author: "Olukayode Asemudara",
     content:
@@ -32,7 +43,7 @@ export const posts = [
     imageUrl: react,
   },
   {
-    id: 2,
+    id: 3,
     title: "A Technical Article about front-end technologies.",
     author: "Olukayode Asemudara",
     content:
@@ -43,7 +54,7 @@ export const posts = [
     imageUrl: frontend,
   },
   {
-    id: 3,
+    id: 4,
     title:
       "programmatically displaying nav menu from an array and binding to its url property",
     author: "Olukayode Asemudara",
@@ -55,7 +66,7 @@ export const posts = [
     imageUrl: vue,
   },
   {
-    id: 4,
+    id: 5,
     title: "Your first Nuxt-3 App",
     author: "Olukayode Asemudara",
     content:
