@@ -25,13 +25,13 @@ const Hero = () => {
 
   return (
     <>
-      <div className="relative h-[90vh] flex items-center">
-        <div className="px-4 mx-auto mt-16 mb-16 max-w-7xl sm:mt-24">
-          <div className="text-center">
-            <h1 className="text-4xl font-extrabold tracking-wider text-gray-700 sm:text-5xl md:text-6xl font-title">
-              <span className="block h1Text">Olukayode Ola-Eri</span>
+      <div class="relative h-[90vh] flex items-center">
+        <div class="px-4 mx-auto mt-16 mb-16 max-w-7xl sm:mt-24">
+          <div class="text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-wide text-gray-700">
+              <span class="block h1Text">Olukayode Ola-Eri</span>
             </h1>
-            <p className="max-w-md mx-auto text-base text-gray-700 sm:text-lg md:mt-5 md:text-2xl font-bold md:max-w-3xl">
+            <p class="max-w-md mx-auto text-base text-gray-700 sm:text-lg md:mt-5 md:text-2xl font-bold md:max-w-3xl">
               {text}
             </p>
           </div>
@@ -43,23 +43,23 @@ const Hero = () => {
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.9 }}
-          classNameName="absolute md:right-10 pl-5 md:pl-0 bottom-10 md:bottom-20 flex gap-5 md:flex-col items-center"
+          className="absolute md:right-10 pl-5 md:pl-0 bottom-10 md:bottom-20 flex gap-5 md:flex-col items-center"
         >
           <a
             href="https://www.linkedin.com/in/olukayode-asemudara-8b04ba196/"
-            classNameName="text-blue-700/90 text-xl md:text-3xl transition-all duration-300 hover:text-blue-700"
+            className="text-blue-700/90 text-xl md:text-3xl transition-all duration-300 hover:text-blue-700"
           >
             <FaLinkedin />
           </a>
           <a
             href="https://www.instagram.com/olukayode_mi/"
-            classNameName="text-pink-700/90 text-xl md:text-3xl transition-all duration-300 hover:text-pink-700"
+            className="text-pink-700/90 text-xl md:text-3xl transition-all duration-300 hover:text-pink-700"
           >
             <FaInstagram />
           </a>
           <a
             href="#"
-            classNameName="text-black/90 text-xl md:text-3xl transition-all duration-300 hover:text-black"
+            className="text-black/90 text-xl md:text-3xl transition-all duration-300 hover:text-black"
           >
             <FaGithub />
           </a>
