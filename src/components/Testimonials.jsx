@@ -39,7 +39,7 @@ const Testimonials = () => {
                   key={testimony.id}
                   class="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800"
                 >
-                  <p class="text-2xl leading-normal dark:text-gray-300">
+                  <p class="text-xl leading-normal dark:text-gray-300">
                     {testimony.note}
                   </p>
                   <div class="flex items-center mt-8 space-x-3">
