@@ -7,7 +7,6 @@ const About = () => {
   const variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
-    transition: { duration: 0.9 },
   };
   return (
     <>
@@ -15,6 +14,7 @@ const About = () => {
         variants={variants}
         initial="hidden"
         whileInView="visible"
+        transition={{ duration: 0.9 }}
         class="min-h-screen bg-primary text-white py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-8"
       >
         {/* <!-- Left Side: Image --> */}

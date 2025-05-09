@@ -1,50 +1,20 @@
 import { motion } from "framer-motion";
+import { resume } from "../data";
 
 const Resume = () => {
   const variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
-    transition: { duration: 0.9 },
   };
-
-  const resume = [
-    {
-      company: "GomyCode",
-      role: "Frontend Developer",
-      date: "2025",
-      description:
-        "Designed and implemented user-friendly UI components, enhancing overall usability and accessibility. Collaborated with backend developers to integrate RESTful APIs, ensuring seamless data flow and dynamic content rendering. Conducted code reviews and provided constructive feedback to junior developers, fostering a culture of continuous improvement and knowledge sharing",
-    },
-    {
-      company: "Freelance",
-      role: "Wordpress Developer",
-      date: "2024-10-01",
-      description:
-        "Built custom WordPress websites, ensuring they met client expectations for branding, functionality, and user experience. Implemented WooCommerce and payment gateway integrations, enabling seamless e-commerce functionality. Optimized websites for faster performance, enhanced security, and mobile responsiveness",
-    },
-    {
-      company: "The Rootshive",
-      role: "Frontend Developer (Intern)",
-      date: "2023",
-      description:
-        "Developed and maintained PHP-based web applications using Bootstrap to create responsive and visually appealing UIs. Worked with backend developers to integrate dynamic content and APIs into frontend interfaces, ensuring seamless functionality",
-    },
-  ];
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl md:my-0">
-      <motion.div
-        variants={variants}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.9 }}
-        className="title mb-10"
-      >
+      <div className="title mb-10">
         <h2 className="text-3xl font-bold text-center mb-4">My Resume</h2>
         <div className="flex justify-center">
           <div className="w-16 h-[2px] bg-gray-900"></div>
         </div>
-      </motion.div>
+      </div>
       <div className="relative wrap overflow-hidden">
         <div className="md:border-2 absolute border-opacity-20 border-gray-700 h-full left-1/2"></div>
 

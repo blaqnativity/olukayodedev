@@ -1,7 +1,12 @@
 import { posts } from "../data";
 import { FaAngleRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Blog = () => {
+  const variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <>
       <div className="mt-20">
@@ -11,7 +16,14 @@ const Blog = () => {
         </div>
         {posts.map((post) => (
           <ul class="max-w-7xl mx-auto grid grid-cols-1 gap-y-10 gap-x-6 items-start p-8">
-            <li key={post.id} class="flex flex-row gap-10  items-start">
+            <motion.li
+              variants={variants}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.9 }}
+              key={post.id}
+              class="flex flex-row gap-10  items-start"
+            >
               <div class="order-1 sm:ml-6 xl:ml-0">
                 <h3 class="mb-1 text-slate-900 font-semibold">
                   <span class="mb-1 block text-sm leading-6 text-indigo-500">
@@ -41,7 +53,7 @@ const Blog = () => {
                 width="1216"
                 height="640"
               />
-            </li>
+            </motion.li>
           </ul>
         ))}
       </div>

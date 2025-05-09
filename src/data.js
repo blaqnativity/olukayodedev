@@ -7,6 +7,7 @@ import rh from "./assets/img/rh.png";
 import jerd from "./assets/img/jerdkonsult.png";
 import acres from "./assets/img/acresxmanna.png";
 
+// blog posts data start
 export const posts = [
   {
     id: 1,
@@ -54,7 +55,9 @@ export const posts = [
     imageUrl: nuxt,
   },
 ];
+// blog posts data end
 
+// projects data start
 export const projects = [
   {
     id: 1,
@@ -92,3 +95,53 @@ export const projects = [
     url: "https://jerdkonsultrecruitment.de/",
   },
 ];
+// projects data end
+
+// resume data start
+export const resume = [
+  {
+    company: "GomyCode",
+    role: "Frontend Developer",
+    date: "2025",
+    description:
+      "Designed and implemented user-friendly UI components, enhancing overall usability and accessibility. Collaborated with backend developers to integrate RESTful APIs, ensuring seamless data flow and dynamic content rendering. Conducted code reviews and provided constructive feedback to junior developers, fostering a culture of continuous improvement and knowledge sharing",
+  },
+  {
+    company: "Freelance",
+    role: "Wordpress Developer",
+    date: "2024-10-01",
+    description:
+      "Built custom WordPress websites, ensuring they met client expectations for branding, functionality, and user experience. Implemented WooCommerce and payment gateway integrations, enabling seamless e-commerce functionality. Optimized websites for faster performance, enhanced security, and mobile responsiveness",
+  },
+  {
+    company: "The Rootshive",
+    role: "Frontend Developer (Intern)",
+    date: "2023",
+    description:
+      "Developed and maintained PHP-based web applications using Bootstrap to create responsive and visually appealing UIs. Worked with backend developers to integrate dynamic content and APIs into frontend interfaces, ensuring seamless functionality",
+  },
+];
+// resume data end
+
+// testimonials data start
+export const testimonials = [
+  {
+    id: 1,
+    name: "Utybe",
+    note: "Kayode does well at replicating exact Figma designs that he is given for any project, and he ensures that his tasks are timely delivered.",
+    portfolio: "UI/UX Designer",
+  },
+  {
+    id: 2,
+    name: "ProductsByMike",
+    note: "I enjoy working with him and assigning tasks to him cause, I am certain that he'll always deliver.",
+    portfolio: "UI/UX Designer",
+  },
+  {
+    id: 3,
+    name: "Toluwase Ogunde",
+    note: "I enjoy working with him and assigning tasks to him cause, I am certain that he'll always deliver.",
+    portfolio: "Fullstack Developer & CEO (TheRootsHive)",
+  },
+];
+// testimonials data end

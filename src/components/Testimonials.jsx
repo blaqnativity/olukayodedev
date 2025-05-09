@@ -1,32 +1,11 @@
 import { motion } from "framer-motion";
+import { testimonials } from "../data";
 
 const Testimonials = () => {
   const variants = {
     hidden: { opacity: 0, y: -50 },
     visible: { opacity: 1, y: 0 },
-    transition: { duration: 0.9 },
   };
-
-  const testimonials = [
-    {
-      id: 1,
-      name: "Utybe",
-      note: "Kayode does well at replicating exact Figma designs that he is given for any project, and he ensures that his tasks are timely delivered.",
-      portfolio: "UI/UX Designer",
-    },
-    {
-      id: 2,
-      name: "ProductsByMike",
-      note: "I enjoy working with him and assigning tasks to him cause, I am certain that he'll always deliver.",
-      portfolio: "UI/UX Designer",
-    },
-    {
-      id: 3,
-      name: "Toluwase Ogunde",
-      note: "I enjoy working with him and assigning tasks to him cause, I am certain that he'll always deliver.",
-      portfolio: "Fullstack Developer & CEO (TheRootsHive)",
-    },
-  ];
 
   return (
     <>
@@ -35,6 +14,7 @@ const Testimonials = () => {
           variants={variants}
           initial="hidden"
           whileInView="visible"
+          transition={{ duration: 0.9 }}
           class="container flex flex-col items-center justify-center w-full p-6 mx-auto text-center xl:px-0"
         >
           <h2 class="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">

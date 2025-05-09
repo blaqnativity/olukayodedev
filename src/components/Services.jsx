@@ -12,7 +12,6 @@ const Stack = () => {
   const variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
-    transition: { duration: 0.9 },
   };
   return (
     <>
@@ -21,6 +20,7 @@ const Stack = () => {
           variants={variants}
           initial="hidden"
           whileInView="visible"
+          transition={{ duration: 0.9 }}
           class="text-center"
         >
           <h2 class="font-semibold text-3xl">Services I offer my clients</h2>
