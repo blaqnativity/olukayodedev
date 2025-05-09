@@ -46,7 +46,7 @@ const Testimonials = () => {
                     <div class="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
                       <img
                         alt="Avatar"
-                        src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjIwMTQ5ODEx&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=100&amp;h=100"
+                        src={testimony.imageUrl}
                         loading="lazy"
                       />
                     </div>

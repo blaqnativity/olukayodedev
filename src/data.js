@@ -6,6 +6,9 @@ import promage from "./assets/img/prforce.png";
 import rh from "./assets/img/rh.png";
 import jerd from "./assets/img/jerdkonsult.png";
 import acres from "./assets/img/acresxmanna.png";
+import utybe from "./assets/img/utybe.jpeg";
+import lase from "./assets/img/lase.jpeg";
+import productsbyMyke from "./assets/img/productsbyMyke.jpeg";
 
 // blog posts data start
 export const posts = [
@@ -130,18 +133,21 @@ export const testimonials = [
     name: "Utybe",
     note: "Kayode does well at replicating exact Figma designs that he is given for any project, and he ensures that his tasks are timely delivered.",
     portfolio: "UI/UX Designer",
+    imageUrl: utybe,
   },
   {
     id: 2,
     name: "ProductsByMike",
-    note: "I enjoy working with him and assigning tasks to him cause, I am certain that he'll always deliver.",
-    portfolio: "UI/UX Designer",
+    note: "Kay is always there to help out with any task that is given to him, and he is a great team player. Man loves learning new things.",
+    portfolio: "UI/UX Designer & CEO (CarayonCo)",
+    imageUrl: productsbyMyke,
   },
   {
     id: 3,
     name: "Toluwase Ogunde",
-    note: "Man is always in the habit of using big grammars whenever we are having a meeting, but above it all, he is a great guy.",
+    note: "Man is always in the habit of using big grammars whenever we are having a call, but above it all, he is a great guy.",
     portfolio: "Fullstack Developer & CEO (TheRootsHive)",
+    imageUrl: lase,
   },
 ];
 // testimonials data end
