@@ -11,7 +11,9 @@ const Blog = () => {
     <>
       <div className="mt-20">
         <div class="text-center">
-          <h2 class="font-semibold text-3xl">Check out my latest articles</h2>
+          <h2 class="font-semibold text-3xl text-gray-700">
+            Check out my latest articles
+          </h2>
           <p class="mt-2 text-gray-500">My Blog</p>
         </div>
         {posts.map((post) => (
@@ -25,7 +27,7 @@ const Blog = () => {
               class="flex flex-col md:flex-row gap-10  items-start"
             >
               <div class="order-1 sm:ml-6 xl:ml-0">
-                <h3 class="mb-1 text-slate-900 font-semibold">
+                <h3 class="mb-1 text-gray-700 font-semibold">
                   <span class="mb-1 block text-sm leading-6 text-indigo-500">
                     {post.date}
                   </span>

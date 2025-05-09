@@ -19,7 +19,7 @@ const Projects = () => {
             transition={{ duration: 0.9 }}
             class="text-center mb-12"
           >
-            <h2 class="text-4xl font-bold mb-4">Portfolio</h2>
+            <h2 class="text-4xl text-gray-700 font-bold mb-4">Portfolio</h2>
             <p class="text-lg text-gray-700 font-semibold">
               Showcasing some of my works and collaborations.
             </p>
@@ -59,7 +59,7 @@ const Projects = () => {
                   />
                   <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-indigo-500 to-blue-600 opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
                   <div class="p-4 flex flex-col items-center justify-between relative z-10">
-                    <h3 class="text-lg font-medium text-txt group-hover:text-gray-dark">
+                    <h3 class="text-lg text-gray-700 font-medium text-txt group-hover:text-gray-dark">
                       {project.title}
                     </h3>
                     <span class="text-sm font-bold text-blue-600 group-hover:text-indigo-500">
