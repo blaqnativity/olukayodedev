@@ -7,7 +7,6 @@ const Hero = () => {
   const variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
-    transition: { duration: 0.9 },
   };
 
   // typewriter effect
@@ -35,6 +34,7 @@ const Hero = () => {
           variants={variants}
           initial="hidden"
           whileInView="visible"
+          transition={{ duration: 0.9 }}
           className="absolute md:right-10 pl-5 md:pl-0 bottom-10 md:bottom-20 flex gap-5 md:flex-col items-center"
         >
           <a
