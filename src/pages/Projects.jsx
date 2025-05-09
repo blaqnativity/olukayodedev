@@ -1,5 +1,6 @@
 import { projects } from "../data";
 import { motion } from "framer-motion";
+import WhatsappApi from "../components/WhatsappApi";
 
 const Projects = () => {
   const variants = {
@@ -71,6 +72,7 @@ const Projects = () => {
           </motion.div>
         </div>
       </section>
+      <WhatsappApi />
     </>
   );
 };
