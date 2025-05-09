@@ -65,7 +65,8 @@ const Hero = () => {
           </a>
         </motion.div>
 
-        <WhatsappApi />
+        {/* whatsapp api component */}
+        {/* <WhatsappApi /> */}
       </div>
     </>
   );
