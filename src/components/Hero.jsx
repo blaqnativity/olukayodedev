@@ -1,4 +1,4 @@
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { motion } from "motion/react";
 
@@ -11,10 +11,17 @@ const Hero = () => {
 
   // typewriter effect
   const [text] = useTypewriter({
-    words: ["Frontend Developer", "Wordpress Developer", "UI/UX Designer"],
+    words: [
+      "Frontend Developer",
+      "Wordpress Developer",
+      "UI/UX Designer",
+      "Technical Writer",
+    ],
     loop: 0,
     delaySpeed: 2500,
   });
+  // end of typewriter effect
+
   return (
     <>
       <div class="relative h-[90vh] flex items-center">

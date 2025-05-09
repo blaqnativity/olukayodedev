@@ -25,15 +25,21 @@ const Navbar = () => {
           <nav>
             <ul class="md:flex items-center justify-between text-base text-gray-600 font-medium pt-4 md:pt-0">
               <li className="hover:text-gray-800 transition duration-300">
+                <Link class="md:p-4 py-3 px-0 block" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="hover:text-gray-800 transition duration-300">
                 <Link class="md:p-4 py-3 px-0 block" to="/about">
                   About
                 </Link>
               </li>
-              <li className="hover:text-gray-800 transition duration-300">
+
+              {/* <li className="hover:text-gray-800 transition duration-300">
                 <Link class="md:p-4 py-3 px-0 block" to="/resume">
                   Resume
                 </Link>
-              </li>
+              </li> */}
               <li className="hover:text-gray-800 transition duration-300">
                 <Link class="md:p-4 py-3 px-0 block" to="/portfolio">
                   Portfolio

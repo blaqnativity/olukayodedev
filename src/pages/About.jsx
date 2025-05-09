@@ -21,8 +21,8 @@ const About = () => {
         <div class="w-full md:w-5/12 flex justify-center h-full md:justify-end">
           <img
             src={olk}
-            alt="About Me"
-            class="w-72 h-96 md:w-80 lg:w-96 object-cover rounded-lg shadow-lg"
+            alt="About_img"
+            class="w-72 h-96 md:w-80 md:h-130 lg:w-96 object-cover rounded-lg shadow-lg"
           />
         </div>
 

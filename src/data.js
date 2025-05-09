@@ -59,13 +59,13 @@ export const posts = [
 
 // projects data start
 export const projects = [
-  {
-    id: 1,
-    title: "GOMYCODE Institute",
-    slug: "webApp",
-    imageUrl: "",
-    url: "https://gomycode.com/ng/",
-  },
+  // {
+  //   id: 1,
+  //   title: "GOMYCODE Institute",
+  //   slug: "webApp",
+  //   imageUrl: "",
+  //   url: "https://gomycode.com/ng/",
+  // },
   {
     id: 2,
     title: "The Rootshive",
@@ -140,7 +140,7 @@ export const testimonials = [
   {
     id: 3,
     name: "Toluwase Ogunde",
-    note: "I enjoy working with him and assigning tasks to him cause, I am certain that he'll always deliver.",
+    note: "Man is always in the habit of using big grammars whenever we are having a meeting, but above it all, he is a great guy.",
     portfolio: "Fullstack Developer & CEO (TheRootsHive)",
   },
 ];
