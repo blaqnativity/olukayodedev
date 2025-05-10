@@ -47,12 +47,14 @@ const Hero = () => {
         >
           <a
             href="https://www.linkedin.com/in/olukayode-asemudara-8b04ba196/"
+            target="_blank"
             className="text-blue-700/90 text-xl md:text-3xl transition-all duration-300 hover:text-blue-700"
           >
             <FaLinkedin />
           </a>
           <a
             href="https://www.instagram.com/olukayode_mi/"
+            target="_blank"
             className="text-pink-700/90 text-xl md:text-3xl transition-all duration-300 hover:text-pink-700"
           >
             <FaInstagram />
