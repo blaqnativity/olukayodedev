@@ -13,12 +13,10 @@ const Navbar = () => {
         {/* logo text */}
         <div class="flex-1 flex justify-between items-center">
           <Link to="/" className="flex flex-col items-end leading-tight">
-            <span className="logo font-[YourFont] text-3xl md:text-4xl tracking-wide">
+            <span className="logo text-2xl md:text-4xl tracking-wide">
               Asemudara's
             </span>
-            <span className="uppercase tracking-widest text-[9px]">
-              portfolio
-            </span>
+            <small className="md:text-[14px]">portfolio</small>
           </Link>
         </div>
 
@@ -70,9 +68,9 @@ const Navbar = () => {
 
         {/* mobile menu nav */}
         {isOpen && (
-          <div class="fixed bg-black/90 md:hidden w-[250px] flex flex-col items-center justify-start h-screen z-20 top-16 right-0">
+          <div class="fixed bg-black/90 md:hidden w-[350px] flex flex-col items-center justify-start h-screen z-20 top-16 right-0">
             <nav>
-              <ul class="flex flex-col items-center justify-between text-base text-gray-600 font-medium pt-4 md:pt-0">
+              <ul class="flex flex-col items-center justify-between text-base text-white font-medium pt-6 md:pt-0">
                 <li className="hover:text-gray-800 transition duration-300">
                   <Link class="md:p-4 py-3 px-0 block" to="/">
                     Home
