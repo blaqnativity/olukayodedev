@@ -9,7 +9,7 @@ const Blog = () => {
   };
   return (
     <>
-      <div className="mt-20">
+      <div className="md:pt-40 pt-30">
         <div class="text-center">
           <h2 class="font-semibold text-3xl text-gray-700">
             Check out my latest articles
