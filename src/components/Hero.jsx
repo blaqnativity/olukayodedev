@@ -60,7 +60,7 @@ const Hero = () => {
             <FaInstagram />
           </a>
           <a
-            href="#"
+            href="https://github.com/blaqnativity"
             className="text-black/90 text-xl md:text-3xl transition-all duration-300 hover:text-black"
           >
             <FaGithub />
