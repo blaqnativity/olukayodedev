@@ -9,6 +9,7 @@ import acres from "./assets/img/acresxmanna.png";
 import utybe from "./assets/img/utybe.jpeg";
 import lase from "./assets/img/lase.jpeg";
 import productsbyMyke from "./assets/img/productsbyMyke.jpeg";
+import alplamed from "./assets/img/alphamed.png";
 import {
   FaCode,
   FaFigma,
@@ -81,38 +82,38 @@ export const posts = [
 
 // projects data start
 export const projects = [
-  // {
-  //   id: 1,
-  //   title: "GOMYCODE Institute",
-  //   slug: "webApp",
-  //   imageUrl: "",
-  //   url: "https://gomycode.com/ng/",
-  // },
+  {
+    id: 1,
+    title: "AlphaMed Labs",
+    slug: "React Dev",
+    imageUrl: alplamed,
+    url: "https://alphamed.vercel.app/",
+  },
   {
     id: 2,
     title: "The Rootshive",
-    slug: "webApp",
+    slug: "Frontend Intern",
     imageUrl: rh,
     url: "https://therootshive.com/",
   },
   {
     id: 3,
     title: "Promage Force",
-    slug: "wordpress",
+    slug: "Wordpress Design",
     imageUrl: promage,
     url: "http://promageforce.com/",
   },
   {
     id: 4,
     title: "Acresmanna",
-    slug: "wordpress",
+    slug: "Wordpress Design",
     imageUrl: acres,
     url: "https://acresxmanna.com/",
   },
   {
     id: 5,
     title: "Jerd Konsult",
-    slug: "wordpress",
+    slug: "Wordpress Design",
     imageUrl: jerd,
     url: "https://jerdkonsultrecruitment.de/",
   },
