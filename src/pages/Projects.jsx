@@ -10,7 +10,7 @@ const Projects = () => {
   };
   return (
     <>
-      <section id="portfolio" class="portfolio-section pt-30 md:pt-40 px-4">
+      <section id="portfolio" class="portfolio-section py-30 md:pt-40 px-4">
         <div class="max-w-7xl mx-auto">
           <motion.div
             variants={variants}
