@@ -17,7 +17,7 @@ const Navbar = () => {
               <span className="logo text-2xl md:text-4xl tracking-wide">
                 Asemudara's
               </span>
-              <small className="md:text-[14px]">portfolio</small>
+              <small className="logo2 md:text-[14px]">portfolio</small>
             </Link>
           </div>
 
