@@ -9,7 +9,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <header className="fixed w-full inset-x-0 z-50 top-0 backdrop-blur-[5px] shadow-md">
+      <header className="w-full inset-x-0 z-50 top-0 backdrop-blur-[5px] shadow-md">
         <div class="max-w-7xl mx-auto md:px-4 px-4 flex flex-wrap items-center py-4">
           {/* logo text */}
           <div class="flex-1 flex justify-between items-center">

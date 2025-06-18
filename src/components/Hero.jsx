@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <>
       <div class="relative h-[100vh] flex items-center">
-        <div class="px-4 mx-auto mt-16 mb-16 max-w-7xl sm:mt-24">
+        <div class="px-4 mx-auto mt-10 mb-16 max-w-7xl sm:mt-20">
           <div class="text-center h-[200px] md:h-[150px]">
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-wide text-gray-700">
               <span class="block h1Text">Olukayode Ola-Eri</span>
