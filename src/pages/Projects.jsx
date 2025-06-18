@@ -12,7 +12,7 @@ const Projects = () => {
     <>
       <section
         id="portfolio"
-        class="portfolio-section pt-30 pb-10 md:pt-40 px-4"
+        class="portfolio-section pt-20 pb-10 md:pt-20 px-4"
       >
         <div class="max-w-7xl mx-auto">
           <motion.div
