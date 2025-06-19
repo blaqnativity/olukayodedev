@@ -1,18 +1,32 @@
 import { FaBars, FaRegMinusSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 const Navbar = () => {
+  const { scrollY } = useScroll();
+  const [show, setShow] = useState(true);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setShow(latest < scrollY.getPrevious());
+  });
+
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <>
-      <header className="w-full inset-x-0 z-50 top-0 backdrop-blur-[5px] shadow-md">
-        <div class="max-w-7xl mx-auto md:px-4 px-4 flex flex-wrap items-center py-4">
+      <motion.header
+        initial={{ y: 0 }}
+        animate={{ y: show ? 0 : -100 }}
+        transition={{ duration: 0.3 }}
+        className="w-full inset-x-0 z-50 top-0 backdrop-blur-[5px] shadow-md fixed bg-white"
+      >
+        <div className="max-w-7xl mx-auto md:px-4 px-4 flex flex-wrap items-center py-4">
           {/* logo text */}
-          <div class="flex-1 flex justify-between items-center">
+          <div className="flex-1 flex justify-between items-center">
             <Link to="/" className="flex flex-col items-end leading-tight">
               <span className="logo text-2xl md:text-4xl tracking-wide">
                 Asemudara's
@@ -23,37 +37,28 @@ const Navbar = () => {
 
           {/* nav desktop menu */}
           <div
-            class="hidden md:flex md:items-center md:w-auto w-full"
+            className="hidden md:flex md:items-center md:w-auto w-full"
             id="menu"
           >
             <nav>
-              <ul class="md:flex items-center justify-between text-base text-gray-600 font-medium pt-4 md:pt-0">
+              <ul className="md:flex items-center justify-between text-base text-gray-600 font-medium pt-4 md:pt-0">
                 <li className="hover:text-gray-800 transition duration-300">
-                  <Link class="md:p-4 py-3 px-0 block" to="/">
+                  <Link className="md:p-4 py-3 px-0 block" to="/">
                     Home
                   </Link>
                 </li>
                 <li className="hover:text-gray-800 transition duration-300">
-                  <Link class="md:p-4 py-3 px-0 block" to="/about">
+                  <Link className="md:p-4 py-3 px-0 block" to="/about">
                     About
                   </Link>
                 </li>
-
-                {/* <li className="hover:text-gray-800 transition duration-300">
-                <Link class="md:p-4 py-3 px-0 block" to="/resume">
-                  Resume
-                </Link>
-              </li> */}
                 <li className="hover:text-gray-800 transition duration-300">
-                  <Link class="md:p-4 py-3 px-0 block" to="/portfolio">
+                  <Link className="md:p-4 py-3 px-0 block" to="/portfolio">
                     Portfolio
                   </Link>
                 </li>
                 <li className="hover:text-gray-800 transition duration-300">
-                  <Link
-                    class="md:p-4 py-3 px-0 block md:mb-0 mb-2"
-                    to="/blog-posts"
-                  >
+                  <Link className="md:p-4 py-3 px-0 block" to="/blog-posts">
                     Blog
                   </Link>
                 </li>
@@ -62,10 +67,7 @@ const Navbar = () => {
           </div>
 
           {/* menu icon */}
-          <div
-            for="menu-toggle"
-            class="text-2xl pointer-cursor md:hidden block"
-          >
+          <div className="text-2xl cursor-pointer md:hidden block">
             {isOpen ? (
               <FaRegMinusSquare onClick={toggleMenu} />
             ) : (
@@ -75,34 +77,37 @@ const Navbar = () => {
 
           {/* mobile menu nav */}
           {isOpen && (
-            <div class="fixed bg-black/90 md:hidden w-[350px] flex flex-col items-center justify-start h-screen z-30 top-19 right-0">
+            <div className="fixed bg-black/90 md:hidden w-[350px] flex flex-col items-center justify-start h-screen z-30 top-19 right-0">
               <nav>
-                <ul class="flex flex-col items-center justify-between text-base text-white font-medium pt-6 md:pt-0">
-                  <li className="hover:text-gray-800 transition duration-300">
-                    <Link class="md:p-4 py-3 px-0 block" to="/">
+                <ul className="flex flex-col items-center justify-between text-base text-white font-medium pt-6">
+                  <li className="hover:text-gray-300 transition duration-300">
+                    <Link className="p-4 block" to="/" onClick={toggleMenu}>
                       Home
                     </Link>
                   </li>
-                  <li className="hover:text-gray-800 transition duration-300">
-                    <Link class="md:p-4 py-3 px-0 block" to="/about">
+                  <li className="hover:text-gray-300 transition duration-300">
+                    <Link
+                      className="p-4 block"
+                      to="/about"
+                      onClick={toggleMenu}
+                    >
                       About
                     </Link>
                   </li>
-
-                  {/* <li className="hover:text-gray-800 transition duration-300">
-                    <Link class="md:p-4 py-3 px-0 block" to="/resume">
-                      Resume
-                    </Link>
-                  </li> */}
-                  <li className="hover:text-gray-800 transition duration-300">
-                    <Link class="md:p-4 py-3 px-0 block" to="/portfolio">
+                  <li className="hover:text-gray-300 transition duration-300">
+                    <Link
+                      className="p-4 block"
+                      to="/portfolio"
+                      onClick={toggleMenu}
+                    >
                       Portfolio
                     </Link>
                   </li>
-                  <li className="hover:text-gray-800 transition duration-300">
+                  <li className="hover:text-gray-300 transition duration-300">
                     <Link
-                      class="md:p-4 py-3 px-0 block md:mb-0 mb-2"
+                      className="p-4 block"
                       to="/blog-posts"
+                      onClick={toggleMenu}
                     >
                       Blog
                     </Link>
@@ -112,7 +117,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
-      </header>
+      </motion.header>
     </>
   );
 };

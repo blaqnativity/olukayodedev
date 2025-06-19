@@ -7,22 +7,13 @@ import NotFound from "./pages/NotFound";
 import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import { Routes, Route } from "react-router-dom";
-import Headroom from "react-headroom";
 
 const App = () => {
   return (
     <>
       <div class="fixed -z-10 min-h-screen w-full bg-[#fff] bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
-      <Headroom
-        style={{
-          webkitTransition: "all .500s ease-in-out",
-          mozTransition: "all .500s ease-in-out",
-          oTransition: "all .500s ease-in-out",
-          transition: "all .500s ease-in-out",
-        }}
-      >
-        <Navbar logo={logo} />
-      </Headroom>
+
+      <Navbar logo={logo} />
 
       <Routes>
         <Route path="/" element={<MainPage />} />
