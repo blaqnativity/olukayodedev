@@ -9,41 +9,41 @@ const Testimonials = () => {
 
   return (
     <>
-      <div class="py-5 md:mt-20">
+      <div className="py-5 md:mt-20">
         <motion.div
           variants={variants}
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.9 }}
-          class="container flex flex-col items-center justify-center w-full p-6 mx-auto text-center xl:px-0"
+          className="container flex flex-col items-center justify-center w-full p-6 mx-auto text-center xl:px-0"
         >
-          <h2 class="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
+          <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
             Here's what some persons think
           </h2>
-          <p class="max-w-2xl py-4 text-lg leading-normal text-gray-700 lg:text-xl xl:text-xl">
+          <p className="max-w-2xl py-4 text-lg leading-normal text-gray-700 lg:text-xl xl:text-xl">
             Testimonials is a great way to increase brand trust and awareness.
             Use this section to highlight your popular customers.
           </p>
         </motion.div>
-        <div class="container p-6 mx-auto mb-10 xl:px-0">
+        <div className="container p-6 mx-auto mb-10 xl:px-0">
           <motion.div
             variants={variants}
             initial="hidden"
             whileInView="visible"
-            class="grid gap-10 lg:grid-cols-2 xl:grid-cols-3"
+            className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3"
           >
             {/* mapping through each testimonial */}
             {testimonials.map((testimony) => (
-              <div class="lg:col-span-2 xl:col-auto">
+              <div className="lg:col-span-2 xl:col-auto">
                 <div
                   key={testimony.id}
-                  class="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800"
+                  className="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800"
                 >
-                  <p class="text-xl leading-normal dark:text-gray-300">
+                  <p className="text-xl leading-normal dark:text-gray-300">
                     {testimony.note}
                   </p>
-                  <div class="flex items-center mt-8 space-x-3">
-                    <div class="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+                  <div className="flex items-center mt-8 space-x-3">
+                    <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
                       <img
                         alt="Avatar"
                         src={testimony.imageUrl}
@@ -51,10 +51,10 @@ const Testimonials = () => {
                       />
                     </div>
                     <div>
-                      <div class="text-lg font-medium text-gray-200">
+                      <div className="text-lg font-medium text-gray-200">
                         {testimony.name}
                       </div>
-                      <div class="text-gray-600 dark:text-gray-400">
+                      <div className="text-gray-600 dark:text-gray-400">
                         {testimony.portfolio}
                       </div>
                     </div>

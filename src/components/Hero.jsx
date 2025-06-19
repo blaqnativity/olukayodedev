@@ -25,13 +25,13 @@ const Hero = () => {
 
   return (
     <>
-      <div class="relative h-[100vh] flex items-center">
-        <div class="px-4 mx-auto mt-10 mb-16 max-w-7xl sm:mt-20">
-          <div class="text-center h-[200px] md:h-[150px]">
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-wide text-gray-700">
-              <span class="block h1Text">Olukayode Ola-Eri</span>
+      <div className="relative h-[100vh] flex items-center">
+        <div className="px-4 mx-auto mt-10 mb-16 max-w-7xl sm:mt-20">
+          <div className="text-center h-[200px] md:h-[150px]">
+            <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide text-gray-700">
+              <span className="block h1Text">Olukayode Ola-Eri</span>
             </h1>
-            <p class="max-w-md mx-auto text-base text-gray-700 sm:text-lg md:mt-5 md:text-2xl font-bold md:max-w-3xl">
+            <p className="max-w-md mx-auto text-base text-gray-700 sm:text-lg md:mt-5 md:text-2xl font-bold md:max-w-3xl">
               {text}
             </p>
           </div>
