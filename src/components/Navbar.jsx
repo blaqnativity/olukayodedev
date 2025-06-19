@@ -8,7 +8,10 @@ const Navbar = () => {
   const [show, setShow] = useState(true);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    setShow(latest < scrollY.getPrevious());
+    const previous = scrollY.getPrevious();
+    if (previous !== undefined) {
+      setShow(latest < previous);
+    }
   });
 
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +24,8 @@ const Navbar = () => {
       <motion.header
         initial={{ y: 0 }}
         animate={{ y: show ? 0 : -100 }}
-        transition={{ duration: 0.3 }}
-        className="w-full inset-x-0 z-50 top-0 backdrop-blur-[5px] shadow-md fixed bg-white"
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="will-change-transform w-full inset-x-0 z-50 top-0 backdrop-blur-[5px] shadow-md fixed bg-white"
       >
         <div className="max-w-7xl mx-auto md:px-4 px-4 flex flex-wrap items-center py-4">
           {/* logo text */}
